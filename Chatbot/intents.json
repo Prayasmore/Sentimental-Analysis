@@ -1,0 +1,117 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hey",
+        "Hola",
+        "Hello",
+        "Good day",
+        "Hii",
+        "hii"
+      ],
+      "responses": ["Hii, Welcome to Pizza Cafe; How can I help you?"],
+      "context": ["options"]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Nice chatting to you, bye",
+        "Till next time"
+      ],
+      "responses": [
+        "See you!",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ],
+      "context": [""]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": ["Happy to help! and please share your valuable feedback", "Any time! and please share your valuable feedback", "My pleasure and please share your valuable feedback"],
+      "context": [""]
+    },
+
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Not sure I understand"
+      ],
+      "context": [""]
+    },
+
+    {
+      "tag": "options",
+      "patterns": ["Hii, Welcome to Pizza Cafe; How can I help you?"],
+      "responses": [""],
+      "context": ["search_pizza_list"]
+    },
+
+    {
+      "tag": "search_pizza_list",
+      "patterns": ["What type of pizza do you have ","What's on the menu","I want a pizza"],
+      "responses": [
+        "1. Margherita 2. Farmhouse 3. Peppy Paneer 4. Pepper Barbecue Chicken"
+      ],
+      "context": [""]
+    },
+    
+    {
+      "tag": "Margherita",
+      "patterns": ["margherita", "Margherita"],
+      "responses": ["Rs 99 for Regular, Rs 299 for Medium, Rs 499 for Large"],
+      "context": ["search_pizza_price"]
+    },
+
+    {
+      "tag": "Peppy Paneer",
+      "patterns": ["Peppy Paneer", "peppy paneer"],
+      "responses": ["Rs 119 for Regular, Rs 179 for Medium, Rs 379 for Large"],
+      "context": ["search_pizza_price"]
+    },
+
+    {
+      "tag": "Farmhouse",
+      "patterns": ["Farmhouse", "farmhouse"],
+      "responses": ["Rs 129 for Regular, Rs 196 for Medium, Rs 599 for Large"],
+      "context": ["search_pizza_price"]
+    },
+
+    {
+      "tag": "Pepper Barbecue Chicken",
+      "patterns": ["Pepper Barbecue Chicken", "pepper barbecue chicken"],
+      "responses": ["Rs 139 for Regular, Rs 159 for Medium, Rs 299 for Large"],
+      "context": ["search_pizza_price"]
+    }, 
+    {
+      "tag": "contact",
+      "patterns": ["How can I contact you","Contact","contact details"],
+      "responses": ["For any queries call on Tel no. 124356768/124475554 and for more info visit www.pizzacafe.com"],
+      "context": ["feedback"]
+    },
+    {
+      "tag": "location",
+      "patterns": ["Where is your cafe located?","Stores near me","Send me your location.","Location details"],
+      "responses": ["Our location is Shop no.4, Pizza Cafe, 22th street, ABC road, XYZ 006"],
+      "context": [""]
+    }  
+  ]
+}

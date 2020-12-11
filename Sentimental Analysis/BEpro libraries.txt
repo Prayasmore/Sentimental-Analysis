@@ -1,0 +1,22 @@
+pip install vaderSentiment
+pip install -U scikit-learn
+
+***KERAS***
+py -m venv keras
+Windows users move inside the “kerasenv” or "keras" folder and search for activate batch file and type the below command,
+.\env\Scripts\activate (Batch file location)
+pip install numpy
+pip install pandas
+pip install matplotlib
+pip install scipy
+pip install -U scikit-learn
+pip pip install seaborninstall -U scikit-learn 
+pip install keras
+deactivate
+***
+
+pip install nltk
+pip install tweepy
+pip install -U textblob
+python -m textblob.download_corpora
+
